@@ -1,26 +1,115 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Default Theme (Black/Neutral) */
+  --bg-primary: #050505;
+  --bg-secondary: #0a0a0a;
+  --text-primary: #ededed;
+  --text-secondary: #a3a3a3;
+  --accent-color: #333333;
+  --accent-glow: rgba(255, 255, 255, 0.1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+[data-theme='blue'] {
+  --accent-color: #00f0ff;
+  --accent-glow: rgba(0, 240, 255, 0.4);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+[data-theme='green'] {
+  --accent-color: #00ff9d;
+  --accent-glow: rgba(0, 255, 157, 0.4);
+}
+
+[data-theme='red'] {
+  --accent-color: #ff0055;
+  --accent-glow: rgba(255, 0, 85, 0.4);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  transition: background-color 0.7s ease, color 0.7s ease;
+}
+
+::selection {
+  background: var(--accent-color);
+  color: #000;
+}
+
+/* Utilities */
+.text-accent {
+  color: var(--accent-color);
+  transition: color 0.5s ease;
+}
+
+.bg-accent {
+  background-color: var(--accent-color);
+  transition: background-color 0.5s ease;
+}
+
+.border-accent {
+  border-color: var(--accent-color);
+  transition: border-color 0.5s ease;
+}
+
+.glow-text {
+  text-shadow: 0 0 10px var(--accent-glow);
+  transition: text-shadow 0.5s ease;
+}
+
+.glow-box {
+  box-shadow: 0 0 20px var(--accent-glow);
+  transition: box-shadow 0.5s ease;
+}
+
+/* Animated Border Utilities */
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.animated-border {
+  position: relative;
+  background: var(--bg-secondary);
+  padding: 2px;
+  /* Border width effectively */
+  border-radius: 0.5rem;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.animated-border::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%;
+  height: 180%;
+  background-image: conic-gradient(from var(--angle), transparent 70%, var(--accent-color));
+  transform: translate(-10%, 50%);
+  animation: spin 5s linear infinite;
+  z-index: -1;
+}
+
+.animated-border::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  /* Match padding */
+  background: var(--bg-secondary);
+  border-radius: calc(0.5rem - 2px);
+  z-index: -1;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+
+  to {
+    --angle: 360deg;
+  }
 }
