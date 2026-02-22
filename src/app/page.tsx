@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
@@ -10,9 +11,7 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
-
-      {/* Extra spacing to allow scrolling for theme changes test */}
-      <div className="h-10"></div>
+      <Experience />
     </div>
   );
 }

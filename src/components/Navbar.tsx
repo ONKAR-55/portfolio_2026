@@ -12,6 +12,7 @@ export default function Navbar() {
         { name: 'Projects', path: '/projects' },
         { name: 'Blog', path: '/blog' },
         { name: 'CTFs', path: '/ctfs' },
+        { name: 'Contact', path: '/contact' },
     ];
 
     return (

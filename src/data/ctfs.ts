@@ -8,9 +8,9 @@ export type CTFChallenge = {
 export const ctfChallenges: CTFChallenge[] = [
     {
         name: "Response The Flag",
-        description: "A web-based CTF challenge focused on analyzing HTTP responses to uncover hidden flags. Inspect headers, status codes, and response bodies to crack the puzzle.",
+        description: "A web-based CTF challenge. A challenge that tests how well you know about working of server side.",
         link: "https://response-the-flag.onrender.com",
-        tags: ["Web", "HTTP", "Reconnaissance"],
+        tags: ["Web", "Discovery", "Reconnaissance"],
     },
     {
         name: "FutureVision: The Hidden Key",
@@ -22,12 +22,12 @@ export const ctfChallenges: CTFChallenge[] = [
         name: "Find The Script",
         description: "Dive deep into JavaScript and source files to locate a hidden script. A challenge designed to test your understanding of client-side code inspection.",
         link: "https://find-the-script.onrender.com",
-        tags: ["JavaScript", "Source Code", "Web"],
+        tags: ["Enumeration", "OSINT", "Web"],
     },
     {
         name: "Find The Key",
         description: "Track down a concealed key buried within the application's structure. A challenge that tests your ability to discover secrets across multiple vectors.",
         link: "https://find-the-key-kih6.onrender.com",
-        tags: ["Web", "Discovery", "Enumeration"],
+        tags: ["Web", "Discovery", "OSINT"],
     },
 ];

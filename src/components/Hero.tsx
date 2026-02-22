@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import HeroImage from "../assets/Hero.png";
+import Link from "next/link";
 
 export default function Hero() {
     return (
@@ -50,12 +51,12 @@ export default function Hero() {
                             />
                         </div>
                         <div className="flex gap-4">
-                            <button className="px-10 py-4 bg-accent text-black font-bold text-lg rounded hover:scale-105 transition-transform shadow-[0_0_20px_var(--accent-glow)]">
+                            <Link href="/projects" className="px-10 py-4 bg-accent text-black font-bold text-lg rounded hover:scale-105 transition-transform shadow-[0_0_20px_var(--accent-glow)]">
                                 View Projects
-                            </button>
-                            <button className="px-10 py-4 border border-white/20 hover:bg-white/50 rounded text-lg transition-all hover:border-accent">
+                            </Link>
+                            <Link href="/contact" className="px-10 py-4 border border-white/20 hover:bg-white/50 rounded text-lg transition-all hover:border-accent">
                                 Contact Me
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </motion.div>

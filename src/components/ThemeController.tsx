@@ -13,7 +13,7 @@ export default function ThemeController() {
         const intervalId = setInterval(() => {
             currentIndex = (currentIndex + 1) % themes.length;
             setTheme(themes[currentIndex]);
-        }, 7000); // Change every 5 seconds
+        }, 7000); // Change every 7 seconds
 
         return () => clearInterval(intervalId);
     }, [setTheme]);
