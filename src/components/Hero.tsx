@@ -20,7 +20,7 @@ export default function Hero() {
                         style={{ textShadow: '0 0 20px var(--accent-glow)' }}>
                         Welcome to my Profile
                     </h3>
-                    <h1 className="text-6xl md:text-9xl font-large tracking-tighter mb-6 relative"
+                    <h1 className="text-6xl md:text-9xl font-black tracking-tighter mb-6 relative"
                         style={{ textShadow: '0 0 40px rgba(255,255,255,0.3)' }}>
                         <span className="glitch-text">ONKAR</span>
                     </h1>
@@ -28,7 +28,15 @@ export default function Hero() {
                         style={{ textShadow: '0 0 10px rgba(255,255,255,0.1)' }}>
                         Full Stack Developer & Cyber Security Enthusiast. <span className='text-accent'>Building and Breaking the limits.</span>
                     </p>
-
+                    {/* CTA Buttons below text */}
+                    <div className="flex flex-wrap gap-4">
+                        <Link href="/projects" className="px-8 py-3 bg-accent text-black font-bold text-base rounded hover:scale-105 transition-transform shadow-[0_0_20px_var(--accent-glow)]">
+                            View Projects
+                        </Link>
+                        <Link href="/contact" className="px-8 py-3 border border-white/20 hover:bg-white/10 rounded text-base transition-all hover:border-accent">
+                            Contact Me
+                        </Link>
+                    </div>
                 </div>
 
                 {/* Right: Hero Image */}
@@ -37,26 +45,18 @@ export default function Hero() {
                     transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                     className="shrink-0"
                 >
-                    <div className="flex flex-col gap-4 relative w-64 h-64 md:w-80 md:h-110">
+                    <div className="relative w-64 h-64 md:w-80 md:h-96">
                         {/* Animated spinning glow ring */}
                         <div className="absolute inset-[-4px] rounded-lg animated-border z-0" />
                         {/* Image container */}
-                        <div className="relative w-full h-full rounded-lg border-2 border-accent glow-box overflow-hidden z-10 ">
-                            <div className="absolute inset-0 z-10" />
+                        <div className="relative w-full h-full rounded-lg border-2 border-accent glow-box overflow-hidden z-10">
                             <Image
                                 src={HeroImage}
                                 alt="Onkar - Hero"
                                 fill
+                                className="object-cover object-top"
                                 priority
                             />
-                        </div>
-                        <div className="flex gap-4">
-                            <Link href="/projects" className="px-10 py-4 bg-accent text-black font-bold text-lg rounded hover:scale-105 transition-transform shadow-[0_0_20px_var(--accent-glow)]">
-                                View Projects
-                            </Link>
-                            <Link href="/contact" className="px-10 py-4 border border-white/20 hover:bg-white/50 rounded text-lg transition-all hover:border-accent">
-                                Contact Me
-                            </Link>
                         </div>
                     </div>
                 </motion.div>

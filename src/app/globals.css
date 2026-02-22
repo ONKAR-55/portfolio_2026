@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  /* Default Theme (Black/Neutral) */
   --bg-primary: #050505;
   --bg-secondary: #0a0a0a;
   --text-primary: #ededed;
   --text-secondary: #a3a3a3;
-  --accent-color: #333333;
-  --accent-glow: rgba(255, 255, 255, 0.1);
+  /* Default to blue — matches initial ThemeController state, prevents grey flash */
+  --accent-color: #00f0ff;
+  --accent-glow: rgba(0, 240, 255, 0.4);
 }
 
 [data-theme='blue'] {

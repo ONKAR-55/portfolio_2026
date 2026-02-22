@@ -2,7 +2,7 @@ import AnimatedCard from '@/components/AnimatedCard';
 
 export default function About() {
     return (
-        <section className="py-15 px-6 w-full max-w-[90%] mx-auto mb-20 h-[80vh]">
+        <section className="py-16 px-6 w-full max-w-[90%] mx-auto mb-10">
             <h2 className="text-5xl md:text-6xl text-right mt-0 mb-12 dark:text-gray-200">
                 About <span className="text-accent">Me</span>
             </h2>
