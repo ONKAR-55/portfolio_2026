@@ -9,7 +9,7 @@ function TimelineCard({ item, index }: { item: ExperienceItem; index: number }) 
     const Icon = isWork ? Briefcase : GraduationCap;
 
     const dotClass = "relative w-12 h-12 rounded-full flex items-center justify-center shrink-0 z-10 border border-white/10 bg-black/80 backdrop-blur-sm group-hover:border-accent group-hover:shadow-[0_0_16px_var(--accent-glow)] transition-all duration-500";
-    const cardClass = "flex-1 mb-12 p-6 md:p-8 rounded-xl border border-white/10 bg-black/60 backdrop-blur-md group-hover:border-accent/40 group-hover:bg-black/80 transition-all duration-500 shadow-xl";
+    const cardClass = "flex-1 mb-12 p-4 md:p-8 rounded-xl border border-white/10 bg-black/60 backdrop-blur-md group-hover:border-accent/40 group-hover:bg-black/80 transition-all duration-500 shadow-xl";
     const badgeClass = isWork
         ? "text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border text-accent border-accent/30 bg-accent/10"
         : "text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border text-purple-400 border-purple-400/30 bg-purple-400/10";
@@ -20,12 +20,12 @@ function TimelineCard({ item, index }: { item: ExperienceItem; index: number }) 
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="relative flex gap-6 md:gap-10 group"
+            className="relative flex gap-0 md:gap-10 group"
         >
             {/* Timeline spine + dot */}
             <div className="flex flex-col items-center">
                 <div className={dotClass}>
-                    <Icon className="w-5 h-5 text-accent" />
+                    <Icon className="w-5 h-5 md:w-9 md:h-9 text-accent" />
                     {item.status === "current" && (
                         <span className="absolute -top-1 -right-1 w-3 h-3">
                             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
@@ -96,7 +96,7 @@ export default function Experience() {
     const eduItems = experiences.filter((e) => e.type === "education");
 
     return (
-        <section className="py-20 px-6 w-full max-w-[90%] mx-auto">
+        <section className="py-20 px-3 w-full max-w-[90%] mx-auto">
             {/* Section Header */}
             <motion.div
                 initial={{ opacity: 0, y: -20 }}
@@ -104,7 +104,7 @@ export default function Experience() {
                 viewport={{ once: true }}
                 className="text-center mb-20"
             >
-                <h2 className="text-5xl md:text-7xl font-black tracking-tighter mb-4">
+                <h2 className="text-4xl md:text-5xl mb-4">
                     Experience &amp; <span className="text-accent">Learning</span>
                 </h2>
                 <p className="text-gray-500 text-lg max-w-xl mx-auto">

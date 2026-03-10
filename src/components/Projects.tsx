@@ -12,7 +12,7 @@ export default function Projects() {
             <motion.h2
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                className="text-5xl md:text-7xl font-black mb-16 text-center tracking-tighter"
+                className="text-4xl md:text-5xl mb-5 text-center"
             >
                 Work <span className="text-accent">&</span> Projects
             </motion.h2>

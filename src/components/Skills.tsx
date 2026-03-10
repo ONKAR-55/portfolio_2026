@@ -43,7 +43,7 @@ function SkillGroup({ title, skills }: { title: string; skills: Skill[] }) {
 export default function Skills() {
     return (
         <section className="py-20 px-6 w-full max-w-[95%] mx-auto">
-            <h2 className="text-4xl font-bold mb-16 text-accent text-center tracking-widest uppercase">
+            <h2 className="text-4xl md:text-5xl mb-16 text-accent text-center tracking-widest">
                 Technical Expertise
             </h2>
             <SkillGroup title="Development" skills={developmentSkills} />

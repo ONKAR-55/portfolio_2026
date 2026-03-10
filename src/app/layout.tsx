@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Onkar - Portfolio",
-  description: "Futuristic Portfolio",
+  description: "Portfolio",
 };
 
 export default function RootLayout({
