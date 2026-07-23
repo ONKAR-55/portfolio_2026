@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import HeroImage from "../assets/Hero.png";
+import HeroImage from "../../public/Hero.png";
 import Link from "next/link";
 
 export default function Hero() {
@@ -26,7 +26,7 @@ export default function Hero() {
                     </h1>
                     <p className="max-w-3xl text-gray-400 text-lg md:text-xl leading-relaxed mb-10"
                         style={{ textShadow: '0 0 10px rgba(255,255,255,0.1)' }}>
-                        Full Stack Developer & Cyber Security Enthusiast. <span className='text-accent'>Building and Breaking the limits.</span>
+                        Full Stack Developer & Cyber Security Enthusiast. <br /> <span className='text-accent'>Building and Breaking the limits.</span>
                     </p>
                     {/* CTA Buttons below text */}
                     <div className="flex flex-wrap gap-4">
@@ -47,7 +47,7 @@ export default function Hero() {
                 >
                     <div className="relative w-64 h-64 md:w-80 md:h-96">
                         {/* Animated spinning glow ring */}
-                        <div className="absolute inset-[-4px] rounded-lg animated-border z-0" />
+                        <div className="absolute -inset-1 rounded-lg animated-border z-0" />
                         {/* Image container */}
                         <div className="relative w-full h-full rounded-lg border-2 border-accent glow-box overflow-hidden z-10">
                             <Image

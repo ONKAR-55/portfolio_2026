@@ -11,9 +11,9 @@ interface AnimatedCardProps {
 
 export default function AnimatedCard({ children, className = "", delay = 0, isStatick = false }: AnimatedCardProps) {
     return (
-        <div className={`relative group isolate overflow-hidden rounded-xl p-[2px] ${className}`}>
+        <div className={`relative group isolate overflow-hidden rounded-xl p-0.5 ${className}`}>
             {/* Animated Gradient Border */}
-            <div className={`absolute inset-[-500%] animate-[spin_4s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,transparent_0%,var(--accent-color)_50%,transparent_100%)] ${isStatick ? "opacity-100" : "opacity-0 group-hover:opacity-100"} transition-opacity duration-500`} />
+            <div className={`absolute inset-[-500%] animate-[spin_4s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,transparent_0%,var(--accent-color)_50%,transparent_100%)] ${isStatick ? "opacity-100" : "opacity-0 group-hover:opacity-20"} transition-opacity duration-500`} />
 
             {/* Static Border (fallback/base) */}
             <div className={`absolute inset-0 rounded-xl border ${isStatick ? "border-white/10" : "border-white/10 group-hover:border-transparent"} transition-colors duration-300`} />

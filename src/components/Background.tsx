@@ -119,7 +119,6 @@ export default function Background() {
     return (
         <div className="fixed inset-0 -z-10 pointer-events-none transition-all duration-1000" style={{ background: getGradient() }}>
             <canvas ref={canvasRef} className="absolute inset-0 block" />
-            <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10 bg-repeat mask-image-gradient"></div>
         </div>
     );
 }

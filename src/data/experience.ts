@@ -16,8 +16,8 @@ export const experiences: ExperienceItem[] = [
         title: 'LLM Post Training Intern',
         organization: 'Ethara.ai',
         location: 'Remote',
-        period: '2024 - Present',
-        status: 'current',
+        period: 'February 2026 - April 2026',
+        status: 'completed',
         description:
             'Working as an LLM post-training intern — creating massive datasets and engineering prompts to improve the learning and alignment of large AI models.',
         highlights: [
@@ -31,7 +31,7 @@ export const experiences: ExperienceItem[] = [
         title: 'Web Application Security Team Lead',
         organization: 'CSBC – Cyber Security & Blockchain Club',
         location: 'Sanjivani University',
-        period: '2023 - Present',
+        period: 'September 2023 - Present',
         status: 'current',
         description:
             'As an active core member of CSBC, I lead web security efforts — organizing workshops, CTF events, and cyber-awareness programs for the university community.',
@@ -45,20 +45,21 @@ export const experiences: ExperienceItem[] = [
     // Education
     {
         type: 'education',
-        title: 'B.Tech in Cyber Security',
+        title: 'B.Tech, Cyber Security',
         organization: 'Sanjivani University',
-        period: '2024 - Present',
+        period: 'July 2024 - Present',
         status: 'current',
         description:
-            'Currently pursuing a specialized degree focused on network security, secure programming, data structures, and threat analysis. My academic journey combines theoretical foundations with hands-on security labs, development, and real-world vulnerability testing.',
+            'Currently pursuing a specialized degree in Cyber Security from Sanjivani University. Immersed in core areas including secure programming, network analysis, and vulnerability research. actively engaged in building real-world security tools and participating in Capture The Flag (CTF) competitions.',
         highlights: [
             'Essentials of Cyber Security',
             'Network Protocols & Configuration',
             'Data Structures & Algorithms',
             'Full-Stack Development',
-            'Security & Validation of Software',
             'Database Management Systems',
-            'Financial & Risk Understanding in Tech',
+            'Financial & Risk Management',
+            'VAPT (Vulenerability Assessment and Penetration Testing)',
+            'Computer Forensics & Cyber Law'
         ],
     },
 ];

@@ -1,3 +1,8 @@
+export type ProjectAsset = {
+    title: string;
+    src: string;
+};
+
 export type Project = {
     title: string;
     description: string;
@@ -6,32 +11,43 @@ export type Project = {
     technologies: string[];
     link: string;
     category: string;
+    assets?: ProjectAsset[];
 };
 
 export const projects: Project[] = [
     {
-        title: "I-Guard",
-        category: "AI & Network Security",
+        title: "SOC-Guard",
+        category: "Network Security, Software Engineering",
         description:
-            "A high performance network and system analyzer and threat detection tool built with modern frontend tooling. Focused on delivering a seamless, interactive experience for users with fast load times and a clean modular codebase.",
+            "A SOC dashboard built to detect and monitor the supecious activity in the network and minitor the incoming and outgoing traffic.",
         features: [
-            "Real-time Threat Detection — AI-powered analysis of network traffic and system logs for instant anomaly detection",
-            "Interactive UI Components — Dynamic elements for a seamless UX",
-            "Optimized Performance — Lightweight architecture with fast transitions",
-            "Modular Codebase — Organized for easy scalability and maintenance",
+            "Real-time Threat Detection — Monitor realtime supecious activity and blocking the IP",
+            "Network traffic analysis — Analyze the incoming and outgoing traffic.",
+            "Real-time system monitoring — Monitoring system processes and watch logs.",
         ],
         benefits: [
-            "Enhanced User Experience with intuitive navigation",
-            "High Scalability with modern tooling",
+            "Real-time IP Tracking",
+            "Easy to use interface",
+            "Real-time system monitoring",
         ],
-        technologies: ["Next.js", "Tailwind CSS", "Lucide React", "Djnago", "Redis", "Docker"],
-        link: "https://github.com/ONKAR-55/AI-Threat-Hunter.git",
+        technologies: ["Next.js", "Tailwind CSS", "Lucide React", "TypeScript", "Python", "Djnago", "SQLite3", "Redis"],
+        link: "https://github.com/ONKAR-55/SOC-Guard.git",
+        assets: [
+            { title: "Dashboard Overview", src: "/Projects SS/SOC-Guard/Dashboard_1.png" },
+            { title: "Analytics & Diagnostics", src: "/Projects SS/SOC-Guard/Dashboard_2.png" },
+            { title: "Live Traffic Monitor", src: "/Projects SS/SOC-Guard/LiveTraffic.png" },
+            { title: "IP & Threat Blocking", src: "/Projects SS/SOC-Guard/Block.png" },
+            { title: "Event & Incident History", src: "/Projects SS/SOC-Guard/History.png" },
+            { title: "Authentication Interface", src: "/Projects SS/SOC-Guard/Auth.png" },
+            { title: "Source Code Inspector 1", src: "/Projects SS/SOC-Guard/SourceCode_1.png" },
+            { title: "Source Code Inspector 2", src: "/Projects SS/SOC-Guard/SourceCode_2.png" },
+        ],
     },
     {
-        title: "SpicyCor – Restaurant Website",
+        title: "SpicyCorner",
         category: "Web Development",
         description:
-            "A fully responsive restaurant website built with modern frontend tooling. Focused on delivering a seamless, interactive experience for diners with fast load times and a clean modular codebase.",
+            "A fully responsive restaurant website built with React.Js. Focused on delivering a seamless, interactive experience.",
         features: [
             "Responsive Design — Optimized for mobile, tablet, and desktop",
             "Interactive UI Components — Dynamic elements for a seamless UX",
@@ -40,10 +56,18 @@ export const projects: Project[] = [
         ],
         benefits: [
             "Enhanced User Experience with intuitive navigation",
-            "Developer Friendly — Clean, documented code",
             "High Scalability with modern tooling",
         ],
-        technologies: ["React.js","Tailwind CSS", "Lucide React",],
+        technologies: ["React.js", "Tailwind CSS", "Lucide React"],
         link: "https://spicycor.netlify.app/",
+        assets: [
+            { title: "Landing Page", src: "/Projects SS/SpicyCorner/Landing.png" },
+            { title: "Menu Showcase 1", src: "/Projects SS/SpicyCorner/Menu_1.png" },
+            { title: "Menu Showcase 2", src: "/Projects SS/SpicyCorner/Menu_2.png" },
+            { title: "Food Basket & Cart", src: "/Projects SS/SpicyCorner/Basket.png" },
+            { title: "Order Checkout & Tracking", src: "/Projects SS/SpicyCorner/Order.png" },
+            { title: "About Us Section", src: "/Projects SS/SpicyCorner/About.png" },
+            { title: "Contact & Location", src: "/Projects SS/SpicyCorner/Contact.png" },
+        ],
     },
 ];
