@@ -26,8 +26,7 @@ export default function Hero() {
                     </h1>
                     <p className="max-w-3xl text-gray-400 text-lg md:text-xl leading-relaxed mb-10"
                         style={{ textShadow: '0 0 10px rgba(255,255,255,0.1)' }}>
-                        Full Stack Developer & Cyber Security Enthusiast. <br /> <span className='text-accent'>Building and Breaking the limits.</span>
-                    </p>
+                        Full Stack Developer & Cyber Security Enthusiast.</p>
                     {/* CTA Buttons below text */}
                     <div className="flex flex-wrap gap-4">
                         <Link href="/projects" className="px-8 py-3 bg-accent text-black font-bold text-base rounded hover:scale-105 transition-transform shadow-[0_0_20px_var(--accent-glow)]">

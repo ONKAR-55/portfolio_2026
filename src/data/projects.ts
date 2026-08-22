@@ -16,6 +16,34 @@ export type Project = {
 
 export const projects: Project[] = [
     {
+        title: "ShareHack",
+        category: "Web Development",
+        description: "A MERN Stack platform for cyber security professionals and learners, showcase the tools and techniques used in cyber security.",
+        features: [
+            "Users can share their tools and techniques",
+            "Step-by-step guidance for beginners",
+            " Open colaberative community platform",
+        ],
+        benefits: [
+            "Easy to use interface",
+            "Easy to share tools and techniques",
+            "Everything is available at one place",
+        ],
+        technologies: ["React.js", "Tailwind CSS", "Lucide React", "MongoDB", "Express.js", "Node.js"],
+        link: "https://sharehack.vercel.app",
+        assets: [
+            { title: "Home", src: "/Projects SS/ShareHack/ShareHack-Home.png" },
+            { title: "Tools", src: "/Projects SS/ShareHack/ShareHack-Tools.png" },
+            { title: "ToolPage", src: "/Projects SS/ShareHack/ShareHack-ToolPage.png" },
+            { title: "Playbooks", src: "/Projects SS/ShareHack/ShareHack-Playbooks.png" },
+            { title: "PlaybookPage", src: "/Projects SS/ShareHack/ShareHack-PlaybookPage.png" },
+            { title: "Workspace", src: "/Projects SS/ShareHack/ShareHack-Workspace.png" },
+            { title: "Profile", src: "/Projects SS/ShareHack/ShareHack-Profile.png" },
+            { title: "Admin", src: "/Projects SS/ShareHack/ShareHack-AdminDash.png" },
+
+        ],
+    },
+    {
         title: "SOC-Guard",
         category: "Network Security, Software Engineering",
         description:
@@ -33,8 +61,8 @@ export const projects: Project[] = [
         technologies: ["Next.js", "Tailwind CSS", "Lucide React", "TypeScript", "Python", "Djnago", "SQLite3", "Redis"],
         link: "https://github.com/ONKAR-55/SOC-Guard.git",
         assets: [
-            { title: "Dashboard Overview", src: "/Projects SS/SOC-Guard/Dashboard_1.png" },
-            { title: "Analytics & Diagnostics", src: "/Projects SS/SOC-Guard/Dashboard_2.png" },
+            { title: "Dashboard Overview", src: "/Projects SS/SOC-Guard/dashboard_1.png" },
+            { title: "Analytics & Diagnostics", src: "/Projects SS/SOC-Guard/dashboard_2.png" },
             { title: "Live Traffic Monitor", src: "/Projects SS/SOC-Guard/LiveTraffic.png" },
             { title: "IP & Threat Blocking", src: "/Projects SS/SOC-Guard/Block.png" },
             { title: "Event & Incident History", src: "/Projects SS/SOC-Guard/History.png" },
@@ -69,5 +97,5 @@ export const projects: Project[] = [
             { title: "About Us Section", src: "/Projects SS/SpicyCorner/About.png" },
             { title: "Contact & Location", src: "/Projects SS/SpicyCorner/Contact.png" },
         ],
-    },
+    }
 ];

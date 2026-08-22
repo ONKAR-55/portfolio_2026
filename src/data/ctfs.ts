@@ -7,9 +7,9 @@ export type CTFChallenge = {
 
 export const ctfChallenges: CTFChallenge[] = [
     {
-        name: "Response The Flag",
+        name: "Ghost Fetch",
         description: "A web-based CTF challenge. A challenge that tests how well you know about working of server side.",
-        link: "https://response-the-flag.onrender.com",
+        link: "https://goshtfetch.onrender.com/",
         tags: ["Web", "Discovery", "Reconnaissance"],
     },
     {
